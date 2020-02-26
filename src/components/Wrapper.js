@@ -7,9 +7,7 @@ const useStyles = makeStyles({
   },
 });
 
-const Wrapper: React.FC = ({ children }) => {
+export default ({ children }) => {
   const classes = useStyles();
   return <div className={classes.wrapper}>{children}</div>;
 };
-
-export default Wrapper;
